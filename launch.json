@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Listen for Xdebug (php8.2)",
+            "type": "php",
+            "request": "launch",
+            "port": 9001,
+            "log": false,
+            "pathMappings": {
+                "/var/www/html": "${workspaceFolder}/www"
+            },
+            "xdebugSettings": {
+                "max_children": 128,
+                "max_data": 1024,
+                "max_depth": 5
+            },
+            "ignore": ["**/vendor/**/*.php"]
+        }
+    ]
+}
